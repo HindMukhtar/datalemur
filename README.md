@@ -1,6 +1,6 @@
 My solutions to Data Lemur Data Science practice problems
 
-##SQL Level Easy
+## SQL Level Easy
 
 | Problem       | Solution      |
 | ------------- | ------------- |
@@ -12,7 +12,7 @@ My solutions to Data Lemur Data Science practice problems
 | [Average Post Hiatus Part 1](https://datalemur.com/questions/sql-average-post-hiatus-1)  | [SQL Query](SQL/AveragePostHiatusP1.sql)  |
 | [Team Power Users](https://datalemur.com/questions/teams-power-users)  | [SQL Query](SQL/TeamPowerUsers.sql)  |
 
-##Python Level Easy
+## Python Level Easy
 | Problem       | Solution      |
 | ------------- | ------------- |
 | [Base 13 Conversion](https://datalemur.com/questions/python-base-13-conversion)  | [Python Code](Python/base13conversion.py)  |
