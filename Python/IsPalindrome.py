@@ -2,7 +2,6 @@ import re
 
 # %% 
 # Faster method if we can use imported library 
-
 def isPalindromeFast(phrase):
   phrase = re.sub('[^A-Za-z0-9]+', '', phrase)
   if phrase.replace(' ', '').lower() == phrase[::-1].replace(' ', '').lower() : 
