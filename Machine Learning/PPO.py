@@ -101,7 +101,7 @@ class PPO(nn.Module):
                 # collect trajectories 
                 obs = torch.tensor(obs)
                 action_logits = self.actor(obs)
-                dist = Categorical(probs=action_logits)
+                dist = Categorical(logits=action_logits)
                 action = dist.sample() 
                 log_prob = dist.log_prob(action)
                 next_obs, reward, terminated, truncated, info = self.env.step(action.item())

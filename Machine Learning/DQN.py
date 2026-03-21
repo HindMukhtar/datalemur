@@ -118,7 +118,7 @@ class DQN(nn.Module):
                 next_obs_batch = torch.tensor(next_obs_batch)
                 future_val = self.targetnet.forward(next_obs_batch)
                 future_val = future_val.max(dim=1)
-                target = torch.tensor(reward) + self.gamma*(1 - done.float())*future_val 
+                target = torch.tensor(reward_batch) + self.gamma*(1 - done.float())*future_val 
 
                 loss = loss_fn(q_taken, target)
 
