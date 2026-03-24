@@ -137,7 +137,7 @@ class PPO(nn.Module):
 
                 delta = reward + self.gamma*(1-done)*next_value - value 
 
-                gae = delta + self.gamme*self.lamda*(1-done)*gae
+                gae = delta + self.gamma*self.lamda*(1-done)*gae
                 advantages.insert(0, gae)
                 deltas.insert(0, delta)
 
